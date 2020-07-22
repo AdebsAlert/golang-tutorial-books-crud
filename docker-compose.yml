@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  go-rest-api:
+    image: go-rest-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
